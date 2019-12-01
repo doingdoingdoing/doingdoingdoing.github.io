@@ -1,0 +1,5 @@
+网址1：https://gitscript.coding.me/webdesigned/index/index.html
+
+网址2：http://47.95.124.202:5000
+
+可复制上面两个网址在浏览器上进行运行，服务器上加载视频需要一定时间，请耐心等待。

@@ -1,5 +1,1050 @@
+<!DOCTYPE html>
 <html>
-<hl>nihao</h1>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>见素抱朴,不忘初心</title>
+
+    <link rel="stylesheet" type="text/css" href="index_css/fullpage.css">
+    <link rel="stylesheet" type="text/css" href="index_css/examples.css">
+
+    <!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+	
+<!-- 	<script type="text/javascript">
+	window.onload = function(){
+
+		var background_box = document.getElementById("background_box");
+		var standup_container = document.getElementById('standup_container');
+
+		var height = document.getElementById("standup_container").offsetHeight;		
+
+		function resizeb(){
+		background_box.style.height=height + "px";//改变b的大小
+		}
+
+		function jt(){//定义监听a大小变化的函数
+		// var hid1 = document.getElementById("standup_container").offsetHeight;//获取宽度
+		if((background_box.style.height) != height){
+		background_box.style.height=height;
+		resizeb();
+		}
+		jt();
+
+		setTimeout(jt(),100);
+		console.log(background_box.style.heigh);
+		
+	}
+}
+</script> -->
+
+    <style>
+        #actions {
+            position: fixed;
+            top: 73px;
+            left: 30px;
+            z-index: 99999;
+        }
+        
+        #actions a {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 7px;
+            margin: 2px;
+            color: #ccc;
+            display: inline-block;
+        }
+        
+        #actions a:hover {
+            color: #fff;
+            background: #81A140;
+        }
+        /* Overwriting styles for control arrows for slides
+		* --------------------------------------- */
+        
+        .fp-controlArrow.fp-prev {
+            left: 50px;
+        }
+        
+        .fp-controlArrow.fp-next {
+            right: 50px;
+        }
+        
+        .banner_text {
+            position: absolute;
+            left: 43%;
+            top: 12%;
+        }
+        
+        .logo img {
+            position: absolute;
+            right: 30px;
+            border: none;
+            width: 200px;
+            height: 70px;
+            top: 10px;
+        }
+        
+        .fp-bg {
+            background-size: cover;
+            background-position: center 0;
+            min-width: 1106px;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        
+        #slide1 .fp-bg {
+            background-image: url('images/home12.jpg');
+        }
+        
+        .culture .fp-bg {
+            background-image: url('images/culture.jpg');
+        }
+        
+        #section2 .fp-bg {
+            background-image: url('images/people1.jpg');
+        }
+        
+        #section3 .fp-bg {
+            background-image: url('images/machine.jpg');
+        }
+        /*大国工匠人物列表*/
+        
+        a {
+            color: #fff;
+        }
+        
+        .main1140 {
+            width: 1140px;
+            margin: 0 auto;
+            overflow: hidden;
+            padding-top: 200px;
+        }
+        
+        .process-box {
+            width: 1140px;
+            height: 450px;
+        }
+        
+        .process-box ul {
+            width: 1140px;
+        }
+        
+        .process-box ul li {
+            width: 196px;
+            height: 196px;
+            float: left;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .process-box ul li .kuang {
+            position: absolute;
+            width: 196px;
+            height: 196px;
+            -moz-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            border: 1px solid #ddd;
+            margin-top: 42px;
+            margin-left: 42px;
+        }
+        
+        .process-box ul li .kuang1 {
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        
+        .process-box ul li .kuang2 {
+            left: 5px;
+            top: 0px;
+            z-index: 2;
+        }
+        
+        .process-box ul li .text1 {
+            width: 276px;
+            height: 276px;
+            text-align: center;
+            z-index: 3;
+            position: absolute;
+            left: 7px;
+            top: 2px;
+        }
+        
+        .process-box ul li .text1 .bg {
+            width: 276px;
+            height: 276px;
+        }
+        
+        .process-box ul li .text1 .bg1 {
+            background: url('images/nanrendong.png') no-repeat;
+        }
+        
+        .process-box ul li .text1 .bg2 {
+            background: url('images/zhoudonghong.png') no-repeat;
+        }
+        
+        .process-box ul li .text1 .bg3 {
+            background: url('images/xuliping.png') no-repeat;
+        }
+        
+        .process-box ul li .text1 .bg5 {
+            background: url('images/guanyanan.png') no-repeat;
+        }
+        
+        .process-box ul li .text1 .bg6 {
+            background: url('images/liwanjun.png') no-repeat;
+        }
+        /*.process-box ul li .text1 .bg7{ background: url(../images/process-img7.png) no-repeat;}*/
+        
+        .process-box ul li .text1 .num {
+            padding-top: 50px;
+            font-size: 86px;
+            color: #dacdc2;
+            font-weight: 700;
+        }
+        
+        .process-box ul li .text1 .title {
+            font-size: 15px;
+            color: #422710;
+        }
+        
+        .process-box ul li .text1 .eng {
+            font-size: 12px;
+            color: #b4a078;
+        }
+        
+        .process-box ul li .text2 {
+            width: 276px;
+            height: 276px;
+            z-index: 4;
+            position: absolute;
+            left: 5px;
+            top: 0px;
+            display: none;
+        }
+        
+        .process-box ul li .text2 .mengban {
+            border: 1px solid #533b26;
+            position: absolute;
+            z-index: 1;
+            width: 196px;
+            height: 196px;
+            -moz-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            background: #000;
+            opacity: 0.4;
+            margin-top: 42px;
+            margin-left: 42px;
+        }
+        
+        .process-box ul li .text2 .desc {
+            position: absolute;
+            z-index: 2;
+            width: 140px;
+            height: 110px;
+            top: 88px;
+            left: 70px;
+            font-size: 12px;
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+        }
+        
+        .process-box ul li {
+            margin-right: 89px;
+        }
+        
+        .process-box ul.two li {
+            margin-top: -40px;
+        }
+        
+        .process-box ul li:hover .text2 {
+            display: block;
+        }
+        /*大国工匠人物列表*/
+        /*文章*/
+        
+        .culture .fp-bg .passage {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            right: 5%;
+            bottom: 15%;
+            border-radius: 15px;
+        }
+        
+        .culture .fp-bg .passage ul {
+            position: absolute;
+            width: 100%;
+            height: 80%;
+            color: #000;
+            list-style: circle;
+            margin: 0 auto;
+        }
+        
+        #section1 .culture .fp-bg .passage ul li img {
+            float: left;
+            margin: 2px 30px;
+        }
+        
+        #section1 .culture .fp-bg .passage ul li {
+            display: block;
+            width: 90%;
+            height: 70px;
+            padding-top: 30px;
+            text-align: left;
+            font-size: 1.2em;
+            line-height: 45%;
+            border-width: 100%;
+            font-family: "Microsoft Yahei";
+            font-weight: lighter;
+        }
+        
+        #section1 .culture .fp-bg .passage ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        #section1 .culture .fp-bg .passage ul li div {
+            border-bottom: 1px solid #ccc;
+            margin: 30px 60px;
+        }
+        /*文章*/
+        /*大国重器*/
+        /*body{
+		margin: 0;
+		padding:0;
+	}	*/
+        
+		#background_box {
+			width: 70%;
+			position: absolute;	
+			z-index: ;
+			background-color: #fff;
+		}
+
+
+        .standup_container {
+            width: 70%;
+            height: auto;
+            font-family: 微软雅黑;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            top: 200px;
+            text-align: left;
+            border-radius: 20px;
+            border: solid 2px #989371;
+            z-index: 100;
+        }
+        
+        .standup_container .machine_menu {
+            width: 240px;
+            margin-left: 130px;
+            float: left;
+            border-right: 1px solid #aaa;
+        }
+        /*position 菜单背景图标*/
+        
+        .positionIicon {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            margin: -5px 4px -5px 4px;
+            float: left;
+            margin-right: 10px;
+        }
+        /*menu图标*/
+        
+        .q-menu-img {
+            background: url("images/plane.png");
+        }
+        
+        .q-menu-doit {
+            background: url("images/ship.png");
+        }
+        
+        .q-menu-three {
+            background: url("images/telescope.png");
+        }
+        
+        .q-menu-four {
+            background: url("images/plane1.png");
+        }
+        
+        .standup_container .machine_menu h3 {
+            font-size: 20px;
+            cursor: pointer;
+            padding: 10px 0;
+        }
+        
+        .standup_container .machine_menu ul {
+            display: none;
+        }
+        
+        .standup_container .machine_menu ul li {
+            height: 28px;
+            line-height: 28px;
+        }
+        
+        .standup_container .machine_menu ul li a:hover {
+            background: #9FB6CD;
+            border-radius: 14px;
+            -webkit-border-radius: 14px;
+            -moz-border-radius: 14px;
+            -moz-border-radius: 14px;
+            color: #fff;
+        }
+        
+        .standup_container a {
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+            display: block;
+            width: 180px;
+            height: 26px;
+            padding-left: 10px;
+        }
+        
+        .standup_container .machine_menu .selected {
+            background: #ccc;
+            border-radius: 14px;
+        }
+        
+        .standup_container .content {
+            margin-top: 15px;
+            width: 70%;
+            margin-left: 380px;
+        }
+        
+        .standup_container .content .get-menu {
+            margin-left: -10px;
+        }
+        
+        .standup_container .content .get-menu a {
+            display: inline-block;
+            font-size: 15px;
+            height: 40px;
+        }
+        
+        .standup_container .content .get-menu a:last-child {
+            margin-left: -8px;
+            color: #7D9EC0;
+        }
+        
+        .standup_container .content .get-menu span {
+            display: inline-block;
+            height: 40px;
+            margin-left: -110px;
+        }
+        
+        .standup_container .content .menu1 .tab {
+            display: none;
+        }
+        
+        .standup_container .content .menu1 .active {
+            display: block;
+        }
+        
+        .standup_container .content .menu1 .tab p {
+            width: 90%;
+            font-size: 16px;
+            line-height: 2em;
+            color: rgba(0, 0, 0, 1);
+            word-break: break-all;
+        }
+        
+        .standup_container .content .menu1 .tab .tt {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        /*第二个菜单下的文档内容*/
+        
+        .standup_container .content .menu2 .tab {
+            display: none;
+        }
+        
+        .standup_container .content .menu2 .active {
+            display: block;
+        }
+        
+        .standup_container .content .menu2 .tab p {
+            font-size: 14px;
+            line-height: 20px;
+            color: rgba(0, 0, 0, 0.8);
+            word-break: break-all;
+        }
+        
+        .standup_container .content .menu2 .tab .tt {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        /*第三个菜单下的文档内容*/
+        
+        .standup_container .content .menu3 .tab {
+            display: none;
+        }
+        
+        .standup_container .content .menu3 .active {
+            display: block;
+        }
+        
+        .standup_container .content .menu3 .tab p {
+            font-size: 14px;
+            line-height: 20px;
+            color: rgba(0, 0, 0, 0.8);
+            word-break: break-all;
+        }
+        
+        .standup_container .content .menu3 .tab .tt {
+            font-size: 13px;
+            font-weight: bold;
+        }
+        /*第四个菜单下的文档内容*/
+        
+        .standup_container .content .menu4 .tab {
+            display: none;
+        }
+        
+        .standup_container .content .menu4 .active {
+            display: block;
+        }
+        
+        .standup_container .content .menu4 .tab p {
+            font-size: 14px;
+            line-height: 20px;
+            color: rgba(0, 0, 0, 0.8);
+            word-break: break-all;
+        }
+        
+        .standup_container .content .menu4 .tab .tt {
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <ul id="menu">
+        <li data-menuanchor="firstPage"><a href="#firstPage">首 页</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">大国崛起</a></li>
+        <li data-menuanchor="3rdPage"><a href="#3rdPage">大国工匠</a></li>
+        <li data-menuanchor="4thpage"><a href="#4thpage">大国重器</a></li>
+        <li class="logo"><img src="images/logo.png"></li>
+    </ul>
+    <div id="myContainer">
+        <!--banner图-->
+        <div class="section" id="section0">
+            <div class="slide home" id="slide1">
+                <div class="fp-bg">
+                    <img class="banner_text" data-src="images/banner_text.png">
+                </div>
+            </div>
+        </div>
+
+        <!--大国崛起-->
+        <div class="section" id="section1">
+            <div class="slide culture">
+                <div class="fp-bg">
+                    <div class="passage">
+                        <ul class="passage-list">
+                            <li class="passa-item"><img data-src="images/dot.png">
+                                <a href="stand_up1.html">中国经济发展现状</a>
+                                <div></div>
+                            </li>
+                            <li class="passa-item"><img data-src="images/dot.png">
+                                <a href="stand_up2.html">中国文化建设成就</a>
+                                <div></div>
+                            </li>
+                            <li class="passa-item"><img data-src="images/dot.png">
+                                <a href="stand_up3.html">中国国防建设</a>
+                                <div></div>
+                            </li>
+                            <li class="passa-item"><img data-src="images/dot.png">
+                                <a href="stand_up4.html">中国政治建设成果</a>
+                                <div></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--大国工匠-->
+        <div class="section" id="section2">
+            <div class="fp-bg">
+
+                <div class="main1140">
+                    <div class="process-box">
+
+                        <ul class="one">
+
+
+                            <li>
+                                <div class="kuang kuang1">
+                                </div>
+                                <div class="kuang kuang2">
+                                </div>
+                            </li>
+                            <a href="hero_passage1.html">
+                                <li style="margin-left: -145px;">
+                                    <div class="kuang kuang1">
+                                    </div>
+                                    <div class="kuang kuang2">
+                                    </div>
+                                    <div class="text1">
+                                        <div class="bg bg1">
+                                        </div>
+                                    </div>
+                                    <div class="text2">
+                                        <div class="mengban"></div>
+                                        <p class="desc">
+                                            </br>
+                                            </br>“天眼”之父---南仁东</p>
+                                    </div>
+                                </li>
+                            </a>
+
+                            <a href="hero_passage2.html">
+                                <li>
+                                    <div class="kuang kuang1">
+                                    </div>
+                                    <div class="kuang kuang2">
+                                    </div>
+                                    <div class="text1">
+                                        <div class="bg bg2">
+                                        </div>
+                                    </div>
+                                    <div class="text2">
+                                        <div class="mengban"></div>
+                                        <p class="desc">
+                                            </br>
+                                            </br>“纸”为匠心---周东红</a>
+                            </p>
+                            </div>
+                            </li>
+                            </a>
+
+                            <a href="hero_passage3.html">
+                                <li>
+                                    <div class="kuang kuang1">
+                                    </div>
+                                    <div class="kuang kuang2">
+                                    </div>
+                                    <div class="text1">
+                                        <div class="bg bg3">
+                                        </div>
+                                    </div>
+                                    <div class="text2">
+                                        <div class="mengban"></div>
+                                        <p class="desc">
+                                            </br>
+                                            </br>航天工匠---徐立平</p>
+                                    </div>
+                                </li>
+                            </a>
+
+                            <li style="margin-left: -145px;">
+                                <div class="kuang kuang1">
+                                </div>
+                                <div class="kuang kuang2">
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="two">
+
+                            <a href="hero_passage4.html">
+                                <li style="margin-left: 280px;">
+                                    <div class="kuang kuang1">
+                                    </div>
+                                    <div class="kuang kuang2">
+                                    </div>
+                                    <div class="text1">
+                                        <div class="bg bg5">
+                                        </div>
+                                    </div>
+                                    <div class="text2">
+                                        <div class="mengban"></div>
+                                        <p class="desc">
+                                            </br>
+                                            </br>深海钳工---管延安</p>
+                                    </div>
+                                </li>
+                            </a>
+
+                            <a href="hero_passage5.html">
+                                <li>
+                                    <div class="kuang kuang1">
+                                    </div>
+                                    <div class="kuang kuang2">
+                                    </div>
+                                    <div class="text1">
+                                        <div class="bg bg6">
+                                        </div>
+                                    </div>
+                                    <div class="text2">
+                                        <div class="mengban"></div>
+                                        <p class="desc">
+                                            </br>
+                                            </br>中国速度---李万君</p>
+                                    </div>
+                                </li>
+                            </a>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- </div> -->
+            </div>
+        </div>
+
+
+        <!--大国重器-->
+        <div class="section" id="section3">
+            <div class="fp-bg">
+				
+				<div class="background_box" id="background_box"></div>
+
+                <div class="standup_container" id="standup_container">
+                    <div class="machine_menu">
+                        <h3><i class="q-menu-img positionIicon"></i>C919大型客机</h3>
+                        <ul class="ulmenu1">
+                            <li><a class="selected" href="#tab1" style="color: #000;">简 介</a></li>
+                            <li><a href="#" style="color: #000;">性能数据</a></li>
+                            <li><a href="#" style="color: #000;">设计特点</a></li>
+                            <li><a href="#" style="color: #000;">相关视频</a></li>
+                        </ul>
+
+                        <h3><i class="q-menu-doit positionIicon"></i>国产航母</h3>
+                        <ul class="ulmenu2">
+                            <li><a href="#" class="selected" style="color: #000;">简 介</a></li>
+                            <li><a href="#" style="color: #000;">技术特点</a></li>
+                            <li><a href="#" style="color: #000;">相关图片</a></li>
+                            <li><a href="#" style="color: #000;">相关视频</a></li>
+                            <!-- <li><a href="#" style="color: #000;">期末结转类凭证问题</a></li> -->
+                        </ul>
+
+                        <h3><i class="q-menu-three positionIicon"></i>中国天眼</h3>
+                        <ul class="ulmenu3">
+                            <li><a class="selected" href="#tab1" style="color: #000;">简 介</a></li>
+                            <li><a href="#" style="color: #000;">项目介绍</a></li>
+                            <li><a href="#" style="color: #000;">意义价值</a></li>
+                            <li><a href="#tab3" style="color: #000;">相关视频</a></li>
+                            <!-- <li><a href="#tab4" style="color: #000;">期末结转类凭证问题</a></li>
+				 -->
+                        </ul>
+
+                        <h3><i class="q-menu-four positionIicon"></i>运-20大型运输机</h3>
+                        <ul class="ulmenu4">
+                            <li><a class="selected" href="#tab1" style="color: #000;">简 介</a></li>
+                            <li><a href="#" style="color: #000;">技术特点</a></li>
+                            <li><a href="#" style="color: #000;">相关视频</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="content">
+                        <div class="get-menu">
+                        </div>
+
+                        <div class="menu1 menu_tab">
+                            <div id="tab1" class="tab active">
+                                <!-- <p class="tt">1.是如何收费？</p> -->
+                                <p>&nbsp;&nbsp;2018年7月12日，C919大型客机102架机从上海浦东机场起飞，历经1小时46分的飞行，平稳降落在山东东营胜利机场，顺利完成首次空中远距离转场飞行。这意味着C919大型客机项目进入密集研发试飞新阶段，正式开启多地同步试飞模式，未来将接受各种复杂气象条件的考验和系列高风险试飞科目的挑战。<br> &nbsp;&nbsp;C919大型客机，全称“COMAC C919”，是中国首款按照最新国际适航标准，具有自主知识产权的干线民用飞机，于2008年开始研制。“C”是China的首字母，也是中国商飞英文缩写COMAC的首字母，第一个“9”的寓意是天长地久，“19”代表的是中国首型中型客机最大载客量为190座。<br>                                    &nbsp;&nbsp;C919大型客机是我国按照国际民航规章自行研制、具有自主知识产权的大型喷气式民用飞机，座级158-168座，航程4075-5555公里，于2017年5月5日成功首飞。
+                                    <br> ------来源于百度百科
+                                </p>
+
+
+                            </div>
+                            <div id="tab2" class="tab">
+
+                                <p>1. 采用先进气动布局和新一代超临界机翼等先进气动力设计技术，达到比现役同类飞机更好的巡航气动效率，并与十年后市场中的竞争机具有相当的巡航气动效率；<br> 2. 采用先进的发动机以降低油耗、噪声和排放；<br> 3. 采用先进的结构设计技术和较大比例的先进金属材料和复合材料，减轻飞机的结构重量；<br> 4. 采用先进的电传操纵和主动控制技术，提高飞机综合性能，改善人为因素和舒适性；<br> 5. 采用先进的综合航电技术，减轻飞行员负担、提高导航性能、改善人机界面；<br>                                    6. 采用先进客舱综合设计技术，提高客舱舒适性；<br> 7. 采用先进的维修理论、技术和方法，降低维修成本。<br></p>
+
+
+                            </div>
+
+                            <div id="tab3" class="tab">
+
+                                <p style="font-size: 14px;font-family: monospace; overflow-x: auto;overflow-y: auto;height: 300px;">&nbsp;&nbsp;C919客机属中短途商用机，实际总长38米，翼展35.8米，高度12米，其基本型布局为168座。标准航程为4075公里，最大航程为5555公里，经济寿命达9万飞行小时。<br> &nbsp;&nbsp;在使用材料上，C919将采用大量的先进复合材料、先进的铝锂合金等，其中复合材料使用量将达到20%，再通过飞机内部结构的细节设计，把飞机重量往下压缩，另外，C919将会使用占全机结构重量20-30%的国产铝合金、钛合金及钢等材料，充分体现了C919大型客机带动国内基础工业的能力与未来趋势。同时，由于大量采用复合材料，较国外同类型飞机80分贝的机舱噪音，C919机舱内噪音可望降到60分贝以下。
+                                    在减排方面，C919将是一款绿色排放、适应环保要求的先进飞机，通过环保的设计理念，有望将飞机碳排放量较同类飞机降低50%。
+                                    <br> &nbsp;&nbsp;舒适性是C919机舱设计的首要目标。机舱座位布局将采用单通道，两边各三座，其中中间的座位空间将加宽，有效地缓解以往坐中间座位乘客的拥挤感。据官方资料表示，C919采用先进的环控、照明设计，提供给旅客更大观察窗，更好的客舱空间，提供给旅客更好的舒适性；同时降低剖面周长0.326%，降低剖面面积0.711%，机身结构重量降低26.7kg。
+                                    <br> &nbsp;&nbsp;C919采用四面式风挡。该项技术是国际上先进的工艺技术，干线客机中只有最新的波音787采用，它的风挡面积大，视野开阔，由于开口相对少，简化了机身加工工业，减少了飞机头部气动阻力。但是工艺难度相对较大，机头需要重新吹风，优化风挡位置和安装角，同时也有风挡玻璃面积相对较大，制造工艺复杂，成本较高。同时该设计对机头受力和风挡间承力支柱强度提出了更高要求，属于国际上比较先进的设计。 C919采用了5000PSI（磅/平方英寸）压力的液压系统，与一般民用飞机采用3000
+                                    PSI（磅/平方英寸）压力的液压系统相比，前者可提供更大的动力。压力的增加意味着可使用较小的管道和液压部件传输动力，减轻了重量。
+                                    <br> &nbsp;&nbsp;C919机翼有36米长，除了装有起落架之外，还能储存燃油，加起来共能容纳186386升燃油。C919采用了双侧杆正杆飞行控制系统，其特色在于采用两种不同构型的4个独立主飞行控制系统。其中包括两个常规液压动作系统和两个电-液动作系统。919采用电-液动作系统使其在动力资源上具备更大的灵活性，增加了冗余性，提高了安全性能。
+                                </p>
+
+                            </div>
+
+                            <div id="tab4" class="tab" style="width: 450px;height: 250px;">
+                                <embed src="index_video/c919.mp4" allowFullScreen='true' quality='high' width='100%' height='100%' align='middle' allowScriptAccess='always' type='application/ogg'>
+
+                                </embed>
+                            </div>
+                        </div>
+
+                        <div class="menu2 menu_tab">
+                            <div id="tab-1" class="tab">
+                                <!-- <p class="tt">1. Question</p> -->
+                                <p style="font-size: 14px; overflow-x: auto;overflow-y: auto;width:90%;height: 300px;line-height: 2em;">&nbsp;&nbsp;中国建造航母是中国几代海军人的梦想，是大国的象征。中国航母的发展深受苏联航母的影响，苏联解体后，中国先后购进了曾经是苏联的“基辅”、“明斯克”、“瓦良格”号等退役航母，并正式开始对航母的研发。<br> &nbsp;&nbsp;目前中国拥有两艘航母，分别是辽宁舰和001A型航空母舰。
+                                    <br> &nbsp;&nbsp;辽宁号航空母舰前身是苏联海军的库兹涅佐夫元帅级航空母舰次舰瓦良格号。1999年，中国购买了瓦良格号，于2002年3月4日抵达大连港。2005年4月26日，开始由中国海军继续建造改进。解放军的目标是对此艘未完成建造的航空母舰进行更改制造，及将其用于科研、实验及训练用途。2012年9月25日，正式更名辽宁号，交付予中国人民解放军海军。2018年5月31日，国防部新闻发言人任国强大校答记者问表示，辽宁舰入列以来，按照计划有序组织了包括远海作战运用演练在内的一系列综合演练，有效检验了航母编队综合攻防体系的建立和保持。航母编队训练向远海作战运用深化拓展，已经初步形成了体系作战能力。
+                                    <br> &nbsp;&nbsp;001A型航母是中国真正意义上的第一艘国产航空母舰，2018年5月13日清晨，001A型航空母舰离开码头，开始海试。中国开始进入“双航母”时代。5月18日中午12时许，001A型航空母舰完成首次出海试验任务，返抵大连造船厂码头，这将进一步完善我国的航母研发能力。
+                                </p>
+
+                            </div>
+
+                            <div id="ta-2" class="tab">
+
+                                <p style="font-size: 14px; overflow-x: auto;overflow-y: auto;width:90%;height: 300px;line-height: 2em;">&nbsp;&nbsp;中国首艘国产航母的威力强于日本的直升机驱逐舰，排水量达6-6.5万吨的001A型航母，采用常规动力，主要武器将是试验已接近尾声的歼-15，其可以搭载40-45架歼-15型舰载机。<br> &nbsp;&nbsp;在2013年9月13日江苏新闻的一档新闻节目中，在介绍某企业承担国家重大科技转化项目时突然提到，“我国神舟9号电机绝缘系统、我国第一艘航母弹射器绝缘系统都出自这家企业”，这是国内新闻第一次提到正在研制的国产航母弹射系统。
+                                    <br> &nbsp;&nbsp;高质量的绝缘材料，是电磁弹射系统必不可少的器件。该绝缘材料厂家是否为国产电磁弹射器提供绝缘系统尚未可知。电磁弹射系统是世界上最先进的弹射方式，美国新一级的“福特级”航母据称将采用电磁弹射系统。
+                                </p>
+
+                            </div>
+
+                            <div id="tab-3" class="tab">
+
+                                <img src="images/001a_1.jpg" style="width: 40%;height: 100%;float: left;">
+                                <img src="images/001a_2.jpg" style="width: 45%;height: 100%;float: left; margin-left: 10px;">
+
+
+                            </div>
+
+                            <div id="tab-4" class="tab" style="width: 450px;height: 250px;">
+                                <embed src="index_video/001a.mp4" allowFullScreen='true' quality='high' width='100%' height='100%' align='middle' allowScriptAccess='always' type='application/ogg'></embed>
+                            </div>
+
+                            <!-- <div  id="tab-5" class="tab">table5</div> -->
+                        </div>
+
+                        <div class="menu3 menu_tab">
+                            <div id="tab-3-1" class="tab">
+                                <!-- <p class="tt">1. 。。。如何收费？222</p> -->
+                                <p style="font-size: 14px; overflow-x: auto;overflow-y: auto;width:90%;height: 300px;line-height: 2em;">&nbsp;&nbsp;&nbsp;&nbsp;“中国天眼”是我国建造的世界上最大单口径球面射电望远镜（简称FAST）。它是由是国家科教领导小组审议确定的国家九大科技基础设施之一，采用中国科学家独创设计和我国贵州南部喀斯特洼地的独特地形条件，建设一个约30个足球场大小的高灵敏度巨型射电望远镜。<br> &nbsp;&nbsp;&nbsp;&nbsp;“中国天眼”正如它这个名字一样，它将成为中国乃至整个世界探索外太空的眼睛，探测引力波，搜寻地外文明。通俗点来说就是它将成为地球人发现外星人的最强利器。是他用自己的光和热把，将人类的眼睛和耳朵伸向了137亿光年之外。
+                                    <br> &nbsp;&nbsp;&nbsp;&nbsp;FAST的天线口径为500米，是国际上最大的单口径望远镜，与号称“地面最大的机器”。与德国波恩100米望远镜相比，其灵敏度提高约10倍。如果天体在宇宙空间均匀分布，FAST可观测目标的数目将增加约30倍。
+                                    <br> &nbsp;&nbsp;&nbsp;&nbsp;与美国Arecibo 300米望远镜相比，FAST灵敏度高2.25倍，而且Arecibo 20°天顶角的工作极限，限制了观测天区，特别是限制联网观测能力。可以预测FAST将在未来20－30年保持世界一流设备的地位，并将吸引国内外一流人才和前沿科研课题，成为国际天文学术交流中心。<br> &nbsp;&nbsp;&nbsp;&nbsp;2016年7月3日，位于中国贵州省内的500米口径球面射电望远镜（FAST），顺利安装最后一块反射面单元，标志着FAST主体工程完工，进入测试调试阶段。平塘举世瞩目的500米口径球面射电望远镜于2016年9月25日落成启用，平塘大射电景区（大射电观景台、平塘天文科学文化园）于9月26日起试运营。
+                                    <br> &nbsp;&nbsp;&nbsp;&nbsp;2017年10月10日FAST发现6颗脉冲星，12月又新发现3颗脉冲星，共已经发现9颗脉冲星。
+                                </p>
+
+
+                            </div>
+                            <div id="tab-3-2" class="tab">
+                                <p style="font-size: 14px; overflow-x: auto;overflow-y: auto;width:90%;height: 300px;line-height: 2em;">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;预计在2013年，一座口径达500米的球面射电望远镜FAST，将在贵州喀斯特洼地建成。该项目首席科学家、中科院国家天文台南仁东研究员在上海召开的“中国天文学会2006年学术年会”上表示，与世界现有最大口径100米望远镜相比，其观测能力提高了10倍，并且将在未来20~30年保持世界领先地位。<br> &nbsp;&nbsp;&nbsp;&nbsp;12月21日，中航工业贵州云马飞机制造厂运用航空制造技术，成功完成了FAST项目12米相似三角形的铝合金面板验证模型制造。该模型由100个1.2米等边三角形构成，每个等边三角形三个交点孔位置精度保持在0.1-0.15mm。该模型的成功制造，标志着云马厂在走向参与规划建设目前世界上最大的、具有500米口径球面射电望远镜（Five
+                                    hundred meters Aperture Spherical Telescope，简称FAST）的工作中迈出了重要一步。<br> &nbsp;&nbsp;&nbsp;&nbsp;据悉，FAST是国家科教领导小组审议确定的国家九 大科技基础设施之一，2007年7月10日，经国家发改委正式批复FAST立项后进入可行性研究阶段。由中国科学院和贵州省人民政府共同建设。建设周期以开工报告通过之日起约5.5年。该项目拟采用我国科学家独创的设计和我国贵州南部的喀斯特洼地的独特地形条件，建设一个约30个足球场大的高灵敏度的巨型射电望远镜。
+                                    <br> &nbsp;&nbsp;&nbsp;&nbsp;FAST建成后将成为世界上最大口径的射电望远镜，FAST与号称“地面最大的机器”的德国波恩100米望远镜相比，灵敏度提高约10倍；与排在阿波罗登月之前、被评为人类20世纪十大工程之首的美国Arecibo 300米望远镜相比，其综合性能提高约10倍。作为世界最大的单口径望远镜，FAST将在未来20～30年保持世界一流设备的地位。<br> &nbsp;&nbsp;&nbsp;&nbsp;FAST的设计技术方案除了在观测中性氢线及其他厘米波段谱线，开展从宇宙起源到星际物质结构的探讨、对暗弱脉冲星及其他暗弱射电源的搜索、高效率开展对地外理性生命的搜索等6个方面实现科学和技术的重大突破外，还将作为一个多学科基础研究平台，有能力将中性氢观测延伸至宇宙边缘，观测暗物质和暗能量，寻找第一代天体。
+                                </p>
+                            </div>
+                            <div id="tab-3-3" class="tab">
+                                <p style="font-size: 14px; overflow-x: auto;overflow-y: auto;width:90%;height: 300px;line-height: 2em;">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;具有中国独立自主知识产权的FAST，是世界上目前口径最大、最具威力的单天线射电望远镜，其设计综合体现了我国高技术创新能力。它将在基础研究众多领域，例如宇宙大尺度物理学、物质深层次结构和规律等方向提供发现和突破的机遇，也将在日地环境研究、国防建设和国家安全等方面发挥不可替代的作用。其建设将推动众多高科技领域的发展，提高原始创新能力、集成创新能力和引进消化吸收再创新能力。它的建设与运行将促进西部经济的繁荣和社会进步，符合国家区域发展总体战略。<br>                                    &nbsp;&nbsp;&nbsp;&nbsp;FAST的天线口径为500米，将是国际上最大的单口径望远镜，与号称“地面最大的机器”德国波恩100米望远镜相比，其灵敏度提高约10倍。如果天体在宇宙空间均匀分布，FAST可观测目标的数目将增加约30倍。与美国Arecibo 300米望远镜相比，FAST灵敏度高2.25倍，而且Arecibo 20°天顶角的工作极限，限制了观测天区，特别是限制联网观测能力。可以预测FAST将在未来20－30年保持世界一流设备的地位，并将吸引国内外一流人才和前沿科研课题，成为国际天文学术交流中心。
+                                </p>
+                            </div>
+                            <div id="tab-3-4" class="tab" style="width: 450px;height: 250px;">
+                                <embed src="index_video/fast.mp4" allowFullScreen='true' quality='high' width='100%' height='100%' align='middle' allowScriptAccess='always' type='application/ogg'></embed>
+                            </div>
+                        </div>
+
+
+                        <div class="menu4 menu_tab">
+                            <div id="tab-1" class="tab">
+                                <!-- <p class="tt">1. Question</p> -->
+                                <p style="font-size: 14px; overflow-x: auto;overflow-y: auto;width:90%;height: 300px;line-height: 2em;">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;运-20（中国编号：Y-20，绰号：鲲鹏，英文：Xian Y-20），是中国自主研发的新一代战略军用大型运输机，由中国航空工业集团公司第一飞机设计研究院设计、西安飞机工业集团（简称：西飞）为主制造，并于2013年1月26日首飞成功。<br> &nbsp;&nbsp;&nbsp;&nbsp;运-20作为大型多用途运输机，可在复杂气象条件下，执行各种物资和人员的长距离航空运输任务。与中国空军现役伊尔-76比较，运-20的发动机和电子设备有了很大改进，载重量也有提高，短跑道起降性能优异。
+                                    <br> &nbsp;&nbsp;&nbsp;&nbsp;运-20飞机研发参考俄罗斯伊尔-76的气动外形和结构设计，并融合美国C-17的部分特点。运-20采用常规布局，悬臂式上单翼、前缘后掠、无翼梢小翼，最大起飞重量220吨，载重超过66吨 ，最大时速≥800千米，航程大于7800千米，实用升限13000米。拥有高延伸性、高可靠性和安全性。运-20作为大型多用途运输机，可在复杂气象条件下，执行各种物资和人员的长距离航空运输任务。
+                                </p>
+                            </div>
+
+                            <div id="ta-2" class="tab">
+                                <p style="font-size: 14px; overflow-x: auto;overflow-y: auto;width:90%;height: 300px;line-height: 2em;">气动布局<br> &nbsp;&nbsp;&nbsp;&nbsp;运-20采用常规布局，机翼为悬臂式上单翼，主翼为大展弦比、中等后掠翼，机翼的前缘后掠角恒定（1/4弦线后掠角大约在24~26度左右），机翼的后缘采用两种后掠方式——中外翼段的后缘后掠角要大一些，而机翼内翼段的后掠角明显减少，无翼梢小翼。悬臂式T形尾翼。垂直安定面与机身连接处向前伸有小背鳍，嵌入式方向舵分为上、下两段，升降舵分为两段。液压可收放前三点式起落架，可靠重力应急自由放下。前起落架为双轮，主起落架为6轮。前起落架向前收入机身，主起落架旋转90°向里收入机身两侧整流罩内。该机为大展弦比超临界翼型，采用包括前缘缝翼及外吹式襟翼系统等增升装置。运-20以伊尔-76运输机的设计为基础，但是体积更大，运载能力更强，电子设备也十分先进。此外，运-20还参考了美国C-17"环球霸王"运输机的部分设计，如垂直尾翼、超临界机翼等。
+                                    机体结构
+                                    <br> &nbsp;&nbsp;&nbsp;&nbsp;运-20将采用超临界翼和提高复合材料使用比例，这样可以降低飞机的结构重量。由于飞机升力增加，升阻比提高，因此即使发动机推力、最大起飞重量维持不变的情况下，其载重也会增加。而伊尔-76采用的是临界翼，运载/起飞重量比低。
+                                    <br> &nbsp;&nbsp;&nbsp;&nbsp;针对中国空军的要求，运-20在伊尔-76基础上加宽、加高货舱以便适应新时期大量的出现的超宽、超高货物。伊尔-76货舱宽度和高度小，装载适应性差，而运-20的货舱容积增加到320立方米，超过伊尔-76三分之一。因此，运-20运输机看起来会觉得比较短、粗，这也是新时期军用运输机一个普遍的外观特征。
+                                    <br> 动力系统
+                                    <br> &nbsp;&nbsp;&nbsp;&nbsp;在动力系统方面，运-20原型机使用进口的俄罗斯的D-30KP2发动机，随后会采用成都发动机有限公司仿制的涡扇18（WS-18，D-30KP2仿制型号）发动机。WS-18各方面的性能应该和CFM-56相近，重量为2000公斤，而伊尔-76采用的D-30KP的重量为2300公斤，特别是前者的耗油量比后者要低20%。这样，在载油量不变的情况下，国产军用大型运输机的航程显然要比伊尔-76更大。或者在相同的航程情况下，运载量比其要多。WS-18发动机单台推力117.6千牛，带有蚌壳式反推力装置。最终运-20运输机的配套发动机将是涡扇-20（WS-20）发动机，单台推力160千牛左右。
+                                    <br> 综合航电
+                                    <br> &nbsp;&nbsp;&nbsp;&nbsp;伊尔-76的航电系统落后，仪表多为传统指针式仪表、航空电子落后。针对这一问题，运-20采用国产综合航电系统，以ARINC429总线为骨干，将电子飞行仪表、飞行控制、导航、通信、气象及发动机数据及指示等系统相连，实现数据的综合处理，并且在座舱的彩色显示屏进行显示。另外可能会添加自卫干扰系统，包括导弹逼近告警系统、干扰发射机和投放架等。
+                                    <br> 比较分析
+                                    <br> &nbsp;&nbsp;&nbsp;&nbsp;运-20安装了4台俄制D-30涡扇发动机，最大起飞重量220吨，最大载重量超过60吨，代表了中国航空工业的最新水平。运-20在设计上博采各家之长，总体性能超过伊尔-76，体现了中国大型飞机研制能力的巨大跃升。该机的性能先进主要有三方面：
+                                    <br> &nbsp;&nbsp;&nbsp;&nbsp;一是机体布局合理。运-20采用宽体设计，看起来比较短、粗，具有新一代军用运输机普遍的外观特征，其加宽、加高的货舱使之方便运输大量超宽、超高货物。运-20在机体结构、减重以及气动布局上的设计远胜伊尔-76，其耗油量比后者低20%。在相同的航程情况下，运-20的运载量会更大。
+                                    <br> &nbsp;&nbsp;&nbsp;&nbsp;与C-17相比，运-20的顶置翼盒使中央翼高出机体，保持了机体内径的完整。由于机翼没有插入机舱，形成了独特的“驼背”外观。翼下净高度比C-17高出很多，有利于按最大机舱高度装载单件超限货物，能够运输C-17不能装载的超高货物，也能够运输伊尔-476无法顺畅载运的主战坦克等重型超宽装备。这一独特装载性能，使之可以运载我军绝大部分大型车辆。如果运-20更换成国产新型大推力大涵道比涡扇-20发动机，其性能还会进一步提高。
+                                    <br> &nbsp;&nbsp;&nbsp;&nbsp;二是对起降场地适应能力强。运-20采用常规布局，大展弦比主机翼，机翼的前缘后掠角恒定，尾翼为悬臂式T形垂直尾翼，并采用了复杂的三缝襟翼设计。其液压可收放前三点式起落架，能依靠重力应急自由放下，使之对起降场地的适应能力很强，短跑道起降性能优异。
+                                    <br> &nbsp;&nbsp;&nbsp;&nbsp;三是应用大量先进技术。运-20采用轻质材料，运用了3D打印技术生产的零部件，突破了数百项关键技术。在空气动力学、大型结构设计、超临界翼、综合航电系统、高可靠性操纵系统的研制等方面，均有重大突破。这降低了飞机的结构重量，提高了升阻比。所以，飞行员描述运-20的飞行感觉是：飞机平稳，具有优良的气动特性、起飞着陆特性和承载能力。
+                                    <br> &nbsp;&nbsp;&nbsp;&nbsp;总体看，运-20的性能优于俄罗斯的伊尔-76，与其最新改进的伊尔-476性能相当。在承载能力上略低于C-17。运-20未来可能在国际市场上成为伊尔-76和C-17的有力竞争对手。
+                                </p>
+
+                            </div>
+
+                            <div id="tab-3" class="tab" style="width: 450px;height: 250px;">
+                                <embed src="index_video/yun_20.mp4" allowFullScreen='true' quality='high' width='100%' height='100%' align='middle' allowScriptAccess='always' type='application/ogg'></embed>
+                            </div>
+                        </div>
+                    </div>
+              
+				</div>
+            </div>
+        </div>
+		
+    </div>
+
+
+
+    <script type="text/javascript" src="index_js/fullpage.js"></script>
+    <script type="text/javascript" src="index_js/examples.js"></script>
+    <script type="text/javascript">
+        function initialization() {
+            var myFullpage = new fullpage('#myContainer', {
+                sectionsColor: ['#fff', '#fff', 'fff', 'whitesmoke', '#ccddff'],
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                resize: true,
+                animateAnchor: false,
+                scrollOverflow: true,
+                autoScrolling: true,
+                responsive: 900,
+                fitSection: true,
+                menu: '#menu',
+                navigation: true,
+                continuousVertical: true,
+                lazyLoading: true,
+                paddingTop: '0'
+            });
+        }
+
+        //fullPage.js initialization
+        initialization();
+
+
+        document.querySelector('#moveSectionUp').addEventListener('click', function(e) {
+            e.preventDefault();
+            fullpage_api.moveSectionUp();
+        });
+
+        document.querySelector('#moveSectionDown').addEventListener('click', function(e) {
+            e.preventDefault();
+            fullpage_api.moveSectionDown();
+        });
+
+        document.querySelector('#moveTo').addEventListener('click', function(e) {
+            e.preventDefault();
+            fullpage_api.moveTo(2, 3);
+        });
+
+        document.querySelector('#silentMoveTo').addEventListener('click', function(e) {
+            e.preventDefault();
+            fullpage_api.silentMoveTo(2);
+        });
+
+        document.querySelector('#silentMoveToSlide').addEventListener('click', function(e) {
+            e.preventDefault();
+            fullpage_api.silentMoveTo(2, 3);
+        });
+
+        document.querySelector('#moveSlideRight').addEventListener('click', function(e) {
+            e.preventDefault();
+            fullpage_api.moveSlideRight();
+        });
+
+        document.querySelector('#moveSlideLeft').addEventListener('click', function(e) {
+            e.preventDefault();
+            fullpage_api.moveSlideLeft();
+        });
+
+        document.querySelector('#setAutoScrollingFalse').addEventListener('click', function(e) {
+            e.preventDefault();
+            fullpage_api.setAutoScrolling(false);
+        });
+
+        document.querySelector('#setAutoScrollingTrue').addEventListener('click', function(e) {
+            e.preventDefault();
+            fullpage_api.setAutoScrolling(true);
+        });
+
+        document.querySelector('#setAllowScrollingFalse').addEventListener('click', function(e) {
+            e.preventDefault();
+            fullpage_api.setAllowScrolling(false);
+        });
+
+        document.querySelector('#setAllowScrollingTrue').addEventListener('click', function(e) {
+            e.preventDefault();
+            fullpage_api.setAllowScrolling(true);
+        });
+
+        document.querySelector('#setKeyboardScrollingFalse').addEventListener('click', function(e) {
+            e.preventDefault();
+            fullpage_api.setKeyboardScrolling(false);
+        });
+
+        document.querySelector('#setKeyboardScrollingTrue').addEventListener('click', function(e) {
+            e.preventDefault();
+            fullpage_api.setKeyboardScrolling(true);
+        });
+
+        document.querySelector('#setScrollingSpeed1500').addEventListener('click', function(e) {
+            e.preventDefault();
+            fullpage_api.setScrollingSpeed(2500);
+        });
+
+        document.querySelector('#setScrollingSpeed700').addEventListener('click', function(e) {
+            e.preventDefault();
+            fullpage_api.setScrollingSpeed(700);
+        });
+
+        document.querySelector('#destroy').addEventListener('click', function(e) {
+            e.preventDefault();
+            fullpage_api.destroy('all');
+        });
+
+        document.querySelector('#undestroy').addEventListener('click', function(e) {
+            e.preventDefault();
+
+            //fullPage.js initialization
+            initialization();
+        });
+
+        document.querySelector('#reBuild').addEventListener('click', function(e) {
+            e.preventDefault();
+            fullpage_api.reBuild();
+        });
+
+        document.querySelector('#setLockAnchorsTrue').addEventListener('click', function(e) {
+            e.preventDefault;
+            fullpage_api.setLockAnchors(true);
+        });
+
+        document.querySelector('#setLockAnchorsFalse').addEventListener('click', function(e) {
+            e.preventDefault;
+            fullpage_api.setLockAnchors(false);
+        });
+    </script>
+
+    <script src="index_js/jquery-2.1.0.min.js"></script>
+    <script src="index_js/modernizr-1.5.min.js"></script>
+    <script src="index_js/jquery.mousewheel.js"></script>
+    <script src="index_js/scripts.js"></script>
+    <script type="text/javascript" src="index_js/pc.js"></script>
+
+
+</body>
 </html>
